@@ -59,4 +59,6 @@ function preOrder(node)
 {
   if (node == undefined) {
     return [];
-  }}
+  }
+   return [node.data].concat(preOrder(node.left)).concat(preOrder(node.right));
+}
