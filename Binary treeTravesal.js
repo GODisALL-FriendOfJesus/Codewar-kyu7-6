@@ -62,3 +62,11 @@ function preOrder(node)
   }
    return [node.data].concat(preOrder(node.left)).concat(preOrder(node.right));
 }
+// 1.) Traverse left subtree, 2.) root node, 3.) traverse right subtree.
+function inOrder(node)
+{
+  if (node == undefined) {
+    return [];
+  }
+  return inOrder(node.left).concat(node.data).concat(inOrder(node.right));
+}
