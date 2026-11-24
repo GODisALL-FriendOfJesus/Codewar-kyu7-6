@@ -54,3 +54,9 @@
 
 
 
+// 1.) Root node, 2.) traverse left subtree, 3.) traverse right subtree.
+function preOrder(node)
+{
+  if (node == undefined) {
+    return [];
+  }}
