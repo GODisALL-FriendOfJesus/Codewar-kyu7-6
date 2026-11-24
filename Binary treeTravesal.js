@@ -76,5 +76,5 @@ function postOrder(node)
   if (node == undefined) {
     return [];
   }
-  return postOrder(node.left).concat(postOrder(node.right)).concat([node.dat]);
+  return postOrder(node.left).concat(postOrder(node.right)).concat([node.data]);
 }
