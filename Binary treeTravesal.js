@@ -70,3 +70,11 @@ function inOrder(node)
   }
   return inOrder(node.left).concat(node.data).concat(inOrder(node.right));
 }
+// 1.) Traverse left subtree, 2.) traverse right subtree, 3.) root node.
+function postOrder(node)
+{
+  if (node == undefined) {
+    return [];
+  }
+  return postOrder(node.left).concat(postOrder(node.right)).concat([node.dat]);
+}
